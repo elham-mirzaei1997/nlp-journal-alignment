@@ -1,0 +1,6 @@
+title,abstract,year,alignment_score,alignment_zscore,is_outlier_low_alignment
+Paper1,This paper studies deep learning models for image classification,2022,0.48717716,0.49165124,False
+Paper2,We analyze economic models and financial forecasting methods,2021,0.21119821,-0.8374262,False
+Paper3,This work explores neural networks and AI applications,2023,0.6202334,1.1324322,False
+Paper4,A study on agriculture and plant biology systems,2020,0.07287979,-1.503549,True
+Paper5,Machine learning methods for prediction and classification,2022,0.5339477,0.7168919,False
