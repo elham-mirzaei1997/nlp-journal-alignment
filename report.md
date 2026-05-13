@@ -14,13 +14,17 @@ The main objectives of this study are:
 - to analyze how alignment evolves over time
 
 ## 2. Methodology
+Research Question
+
+This project aims to answer the following research question:
+
+To what extent do published scientific articles align with a journal’s stated Aims & Scope?
 
 ### 2.1 Dataset
 
 A dataset of scientific articles was collected using the arXiv API. For each paper, the following information was extracted: title, abstract, and year of publication.
 
-The dataset used in this project contains X articles (replace with your number).
-
+The dataset used in this project contains 5 articles.
 ---
 
 ### 2.2 Aims & Scope Definition
@@ -41,26 +45,25 @@ Each abstract and the Aims & Scope text were encoded into vector representations
 
 ### 2.4 Similarity Measurement
 
-We computed cosine similarity between the embedding of the Aims & Scope and the embedding of each article abstract.
+Cosine similarity is used as the evaluation metric to measure the alignment between the journal scope and article abstracts.
 
 This resulted in an alignment score between 0 and 1 for each paper.
+Evaluation Metric
+
 
 ---
 
 ### 2.5 Analysis
 
+The main objectives of this study are to quantify how well articles match the intended scope, identify outlier papers that deviate from the theme, and analyze how alignment evolves over time.
 We performed the following analyses:
-- distribution of alignment scores
-- identification of high and low alignment papers
-- detection of outliers
-- temporal analysis of alignment over time
+
 
 ## 3. Results
 
 ### 3.1 Overall Alignment
 
-The average alignment score is 0.385, with values ranging from 0.07 to 0.62. This indicates a moderate level of thematic consistency between the articles and the journal’s scope.
-
+No paper shows strong alignment (above 0.7), indicating that even the most relevant articles only partially match the defined scope.
 ---
 
 ### 3.2 Outlier Analysis
@@ -75,8 +78,7 @@ This suggests that not all articles strictly follow the journal’s intended foc
 
 The distribution of alignment scores shows that most papers fall within a moderate range. However, there is significant variability, indicating differences in thematic relevance.
 
-(👉 Here you can mention your histogram or boxplot)
-
+As shown in the histogram and boxplot, most papers exhibit moderate alignment, while a few papers show significantly lower scores, indicating potential outliers.
 ---
 
 ### 3.4 Temporal Analysis
@@ -101,6 +103,8 @@ Future work could include:
 - using larger datasets
 - applying topic modeling methods such as BERTopic
 - comparing multiple journals
+
+Overall, the results provide preliminary evidence that NLP techniques can be effectively applied to analyze thematic consistency in scientific publishing.
 
 ## 5. Conclusion
 
