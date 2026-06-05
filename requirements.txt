@@ -1,0 +1,15 @@
+cat > requirements.txt << 'EOF'
+sentence-transformers
+pandas
+matplotlib
+seaborn
+scikit-learn
+requests
+tqdm
+numpy
+jupyter
+ipykernel
+bertopic
+umap-learn
+hdbscan
+EOF
