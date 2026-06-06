@@ -89,22 +89,23 @@ TF-IDF procedure and HDBSCAN clustering.
 
 ## Project Structure
 thematic_alignment/
+
 │
-├── src/                        
+├── src/  
 │   ├── init.py
 │   ├── fetcher.py              
 │   ├── data_loader.py          
 │   ├── embedder.py             
 │   ├── analyzer.py             
-│   └── visualizer.py          
+│   └── visualizer.py   
 │
 ├── notebooks/
-│   └── demo.ipynb              
+│   └── demo.ipynb   
 │
 ├── Data/
-│   └── papers.csv              
+│   └── papers.csv  
 │
-├── results/                    
+├── results/ 
 │   ├── alignment_scores.csv
 │   ├── yearly_alignment.csv
 │   ├── alignment_distribution.png
