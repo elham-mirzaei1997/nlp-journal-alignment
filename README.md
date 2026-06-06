@@ -92,20 +92,27 @@ thematic_alignment/
 
 │
 ├── src/  
+
 │   ├── init.py
 │   ├── fetcher.py              
 │   ├── data_loader.py          
 │   ├── embedder.py             
 │   ├── analyzer.py             
 │   └── visualizer.py   
+
 │
 ├── notebooks/
+
 │   └── demo.ipynb   
+
 │
 ├── Data/
+
 │   └── papers.csv  
+
 │
 ├── results/ 
+
 │   ├── alignment_scores.csv
 │   ├── yearly_alignment.csv
 │   ├── alignment_distribution.png
@@ -113,6 +120,7 @@ thematic_alignment/
 │   ├── boxplot_by_year.png
 │   ├── category_by_year.png
 │   └── topic_distribution.png
+
 │
 ├── main.py                     
 ├── requirements.txt
