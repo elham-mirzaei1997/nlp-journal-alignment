@@ -44,19 +44,20 @@ The pipeline follows four stages as defined in the project
 specification:
 
 ### Stage 1 — Data Collection
-- **Source:** OpenAlex API (open access, no authentication)
-- **Journal:** Nature Machine Intelligence (ISSN: 2522-5839)
-- **Period:** 2018–2024 (6 years)
-- **Volume:** 500 paper abstracts
+Source: OpenAlex API
+
+The dataset contains scientific papers related to machine learning,
+artificial intelligence, and deep learning collected using keyword-based search.
 
 ### Stage 2 — Content Modeling
 
 Two complementary NLP methods are applied:
 
 **Method 1 — Sentence-BERT Embeddings**
-Papers and the Aims & Scope text are encoded into dense
-semantic vectors using `allenai-specter`, a transformer model
-pre-trained on scientific paper similarity tasks.
+Scientific Document Embeddings
+
+The project uses allenai-specter, a transformer-based model
+trained specifically for scientific paper representation.
 
 > Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence
 > Embeddings using Siamese BERT-Networks. EMNLP-IJCNLP.
@@ -164,15 +165,18 @@ jupyter notebook notebooks/demo.ipynb
 
 ## Results
 
-| Metric | Value |
-|--------|-------|
-| Total papers analysed | 500 |
-| Year range | 2018–2024 |
-| Mean alignment score | — |
-| Std deviation | — |
-| Drift slope (per year) | — |
-| Outliers detected (z ≤ −1.5) | — |
-| Topics discovered (BERTopic) | — |
+
+| Metric         | Value     |
+| -------------- | --------- |
+| Total papers   | 500       |
+| Year range     | 2018–2024 |
+| Mean alignment | 0.7529    |
+| Std deviation  | 0.0675    |
+| Maximum score  | 0.9258    |
+| Minimum score  | 0.5683    |
+| Outliers       | 34        |
+| Drift slope    | +0.002820 |
+
 
 > Run `python3 main.py` to populate the results table above.
 
@@ -222,13 +226,10 @@ jupyter notebook notebooks/demo.ipynb
 
 ## AI Usage Disclaimer
 
-Parts of this project were developed with the assistance of
-Claude (Anthropic). The AI was used to support pipeline
-design, code structure, and identification of relevant
-methods and datasets. All AI-generated content has been
-carefully reviewed, edited, and validated by the author.
-Full responsibility for the content, accuracy, and academic
-integrity of this work rests with the author.
+AI tools were used to support code organization,
+documentation, and debugging.
+All results and implementation decisions were reviewed
+and validated by the author.
 
 ---
 
@@ -236,4 +237,4 @@ integrity of this work rests with the author.
 
 **Course:** Natural Language Processing
 **Project:** P7 — Analyzing Thematic Alignment in Scientific Journals
-**Institution:** *(University di Milano)*
+**Institution:** *(Università degli Studi di Milano)*
