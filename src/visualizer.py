@@ -154,7 +154,7 @@ class AlignmentVisualizer:
             data=topic_counts, y="topic_label", x="count",
             ax=ax, color="#6366F1",
         )
-        ax.set_title("Top 15 Topics Discovered by BERTopic",
+        ax.set_title("Main Topics Discovered by BERTopic",
                      fontsize=14, fontweight="bold")
         ax.set_xlabel("Number of Papers")
         ax.set_ylabel("Topic")
