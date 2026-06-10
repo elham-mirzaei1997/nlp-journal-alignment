@@ -6,8 +6,8 @@
 
 ## Overview
 
-This project investigates whether articles published in
-*Nature Machine Intelligence* align with the journal's stated
+This project investigates whether AI and machine learning
+scientific publications align with a predefined journal
 Aims & Scope using Natural Language Processing techniques.
 The study covers publications from 2018 to 2024, analyzing
 thematic coherence, detecting outlier papers, and identifying
@@ -22,10 +22,10 @@ Journals*.
 
 ## Research Question
 
-> *Do papers published in Nature Machine Intelligence
-> consistently reflect the journal's stated Aims & Scope
-> between 2018 and 2024, and is there measurable thematic
-> drift over time?*
+>Do AI and machine learning scientific publications
+>consistently align with a predefined journal Aims & Scope
+>between 2018 and 2024, and is there measurable thematic
+>drift over time?
 
 ### Objectives
 
@@ -73,7 +73,7 @@ TF-IDF procedure and HDBSCAN clustering.
 ### Stage 3 — Alignment Scoring
 - **Metric:** Cosine similarity between each paper embedding
   and the Aims & Scope embedding
-- **Range:** 0.0 (no alignment) → 1.0 (perfect alignment)
+- **Range:** -1 to +1, where higher values indicate stronger semantic alignment.
 - **Thresholds:** Data-driven via Q25/Q75 percentiles
   (no hardcoded values)
 - **Outliers:** Z-score threshold of −1.5
@@ -92,7 +92,7 @@ thematic_alignment/
 
 │
 ├── src/  
-│   ├── init.py
+│   ├── __init__.py
 │   ├── fetcher.py              
 │   ├── data_loader.py          
 │   ├── embedder.py             
@@ -179,7 +179,6 @@ jupyter notebook notebooks/demo.ipynb
 | Drift slope    | +0.002820 |
 
 
-> Run `python3 main.py` to populate the results table above.
 
 ### Output Files
 
@@ -207,6 +206,22 @@ jupyter notebook notebooks/demo.ipynb
 
 ---
 
+## Code Architecture
+
+The implementation follows an Object-Oriented Programming design.
+
+Responsibilities are separated into independent modules:
+
+- fetcher.py → data collection
+- data_loader.py → preprocessing
+- embedder.py → embedding generation
+- analyzer.py → similarity calculation and evaluation
+- visualizer.py → result visualization
+
+This structure improves maintainability and reproducibility.
+
+---
+
 ## References
 
 1. Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence
@@ -222,6 +237,9 @@ jupyter notebook notebooks/demo.ipynb
 4. Hassan-Montero, Y., et al. (2014). Graphical interface of
    the Scimago Journal and Country Rank. *El profesional de
    la información*, 23(3).
+
+5. Cohan et al. (2020). SPECTER: Document-level Representation Learning 
+using Citation-informed Transformers.
 
 ---
 
