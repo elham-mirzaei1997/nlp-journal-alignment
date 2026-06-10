@@ -92,7 +92,7 @@ thematic_alignment/
 
 │
 ├── src/  
-│   ├── __init__.py
+│   ├── __ init __.py
 │   ├── fetcher.py              
 │   ├── data_loader.py          
 │   ├── embedder.py             
@@ -254,6 +254,7 @@ and validated by the author.
 
 ## Author
 
-**Course:** Natural Language Processing
-**Project:** P7 — Analyzing Thematic Alignment in Scientific Journals
-**Institution:** *(Università degli Studi di Milano)*
+- **Name&Surenamr:** Elham Mirzaei Askarani
+- **Course:** Natural Language Processing
+- **Project:** P7 — Analyzing Thematic Alignment in Scientific Journals
+- **Institution:** *(Università degli Studi di Milano)*
