@@ -254,7 +254,7 @@ and validated by the author.
 
 ## Author
 
-- **Name&Surenamr:** Elham Mirzaei Askarani
+- **Name:** Elham Mirzaei Askarani
 - **Course:** Natural Language Processing
 - **Project:** P7 — Analyzing Thematic Alignment in Scientific Journals
 - **Institution:** *(Università degli Studi di Milano)*
